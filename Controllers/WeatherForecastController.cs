@@ -11,14 +11,10 @@ namespace SwaggerIntegration.Controllers
     [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-        }
-
         /// <summary>
         /// Returns a range of integers
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Range of integers</returns>
         [HttpGet]
         public IEnumerable<int> Get()
         {
